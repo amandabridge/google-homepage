@@ -1,0 +1,130 @@
+/* Global Styles */
+
+* {
+  font-family: arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #272727;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Main Body */
+
+.logo, .search {
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.buttons {
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin: 11px 4px;
+  padding: 10px 16px;
+  color: #757575;
+  shadow: 0 1px 1px 0;
+}
+
+/*
+.main {
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+.search {
+  font-size: 24px;
+  width: 500px;
+  box-shadow: 0 0 1px 0 rgba(0,0.16,0,0)
+}
+
+/* Header and Footer */
+.header, .footer {
+  font-size: 12px;
+  flex-direction: row;
+}
+
+.footer {
+  width: 100%;
+  background-color: #F2F2F2;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-end {
+  justify-content: flex-end;
+  margin-right: auto;
+}
+
+.footer-start {
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+.header {
+  justify-content: flex-end;
+}
+
+#bell {
+  background-image: url(images/google_bell.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+
+/*temporary for styling and placement*/
+.footer a, .header a {
+  margin: 10px;
+}
+
+
+
+
+/*hover states */
+
+.buttons:hover {
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border: 2px;
+  border-color: #000;
+}
+
+#apps:hover {
+  background-image: url(images/google_apps-hover.png);
+  background-image: no-repeat;
+}
+
+a p:hover {
+  text-decoration: underline;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+/* add in hover images*/
+#bell:hover {
+  background-image: url(images/google_bell-hover.png);
+}
+
+.search:focus {
+  outline-color: #aaa;
+  outline-style: auto;
+
+}
+
+.search:hover {
+  box-shadow: 0 3px 8px 0 rgba (0,0,0,0.2) 0 0 1px rgba (0,0,0,0.08)
+}
