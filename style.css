@@ -9,21 +9,16 @@ a {
   color: #272727;
 }
 
-.flexcontainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 /* Main Body */
 
-.logo, .search {
+.logo, .search-form, .buttons {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
-.buttons {
+.button {
   background-color: #F5F5F5;
   border: none;
   font-size: 13px;
@@ -35,18 +30,14 @@ a {
   shadow: 0 1px 1px 0;
 }
 
-/*
 .main {
-  justify-content: center;
-  align-items: center;
-} */
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-.search {
+.search-input {
   font-size: 24px;
   width: 500px;
-  box-shadow: 0 0 1px 0 rgba(0,0.16,0,0)
 }
 
 /* Header and Footer */
@@ -56,45 +47,69 @@ a {
 }
 
 .footer {
-  width: 100%;
+  display: flex;
   background-color: #F2F2F2;
   position: absolute;
   bottom: 0;
+  justify-content: space-between;
 }
 
+
+.footer-end a, .footer-start a {
+  margin: 10px;
+}
+.footer-end, .footer-start {
+  display: flex;
+}
 .footer-end {
-  justify-content: flex-end;
-  margin-right: auto;
+  align-self: flex-end;
+  flex-direction: row;
 }
 
 .footer-start {
+  flex-direction: row;
   justify-content: flex-start;
-  margin-left: auto;
 }
 
-.header {
+.header, .footer {
+  width:100%;
+}
+
+.header-item {
+  margin: 0 10px 0 10px;
+  align-items: center;
+}
+
+.header-items {
+  display: flex;
   justify-content: flex-end;
+  flex-direction: row;
+  margin-bottom: 200px;
 }
 
-#bell {
-  background-image: url(images/google_bell.png);
+#bell, #apps {
   width: 20px;
   height: 20px;
   background-size: contain;
 }
-
-
-/*temporary for styling and placement*/
-.footer a, .header a {
-  margin: 10px;
+#bell {
+  background-image: url(images/google_bell.png);
 }
 
+#apps {
+  background-image: url(images/google_apps.png);
+}
 
-
+#profile {
+  background-image: url(images/google_profile.png);
+  width: 40px;
+  height: 40px;
+  align-items: ;
+}
 
 /*hover states */
 
-.buttons:hover {
+.button:hover {
   color: #222;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   border: 2px;
@@ -103,7 +118,7 @@ a {
 
 #apps:hover {
   background-image: url(images/google_apps-hover.png);
-  background-image: no-repeat;
+  background-repeat: no-repeat;
 }
 
 a p:hover {

@@ -4,41 +4,52 @@
   <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <div class="header flexcontainer">
-    <a href="https://mail.google.com/mail/?tab=wm&authuser=0"><p class="flex-item">Mail</p></a>
-    <p class="flex-item">Images</p>
-    <a href="https://www.google.com/intl/en/options/"><img id="apps" class="flex-item" src="images/google_apps.png" width=20px; height=20px;></a>
-    <!--<img id="bell" class="flex-item" src="images/google_bell.png" width=30px; height=30px;> -->
-    <div id="bell"></div>
-    <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"> <img class="flex-item" src="images/google_profile.png" width=30px; height=30px;></a>
+<div class="main">
+  <div class="header">
+    <div class="header-items">
+      <div class="header-item">
+        <a href="https://mail.google.com/mail/?tab=wm&authuser=0"><p class="header-item">Mail</p></a>
+      </div>
+      <div class="header-item">
+        <p class="header-item">Images</p>
+      </div>
+      <div id="apps" class="header-item">
+      </div>
+      <div id="bell" class="header-item">
+      </div>
+      <div id="profile" class="header-item">
+      </div>
+    </div>
   </div>
 
-  <div class="main">
-    <div class="logo main flexcontainer">
+<div class="search">
+    <div class="logo">
       <img src="images/google-logo.png" alt="Google logo" height=90px; width=270px;>
     </div>
-    <div class="search search-bar">
-      <form name="search-form">
-        <input type="text" name="search" class="search flexcontainer">
+    <div>
+      <form name="search-form" class="search-form">
+        <input class="search-input" type="text" name="search">
       </form>
     </div>
-    <div class="button flexcontainer">
-      <button name="search" class="buttons">Search</button>
-      <button name="lucky" class="buttons">I'm Feeling Lucky</button>
+    <div class="buttons">
+      <button name="search" class="button">Search</button>
+      <button name="lucky" class="button">I'm Feeling Lucky</button>
     </div>
   </div>
+</div>
 
-  <div class="footer flexcontainer">
-    <div class="footer-start flexcontainer">
+  <div class="footer">
+    <div class="footer-start">
       <a href="https://www.google.com/intl/en/ads/?fg=1"><p>Advertising</p></a>
       <a href="https://www.google.com/services/?fg=1"><p>Business</p></a>
       <a href="https://www.google.com/intl/en/about.html?fg=1"><p>About</p></a>
     </div>
-    <div class="footer-end flexcontainer">
+    <div class="footer-end">
       <a href="https://www.google.com/intl/en/policies/privacy/?fg=1"><p>Privacy</p></a>
       <a href="https://www.google.com/intl/en/policies/terms/?fg=1"><p>Terms</p></a>
       <a href="https://www.google.com/preferences?hl=en"><p>Settings</p></a>
     </div>
   </div>
+</div>
 </body>
 </html>
