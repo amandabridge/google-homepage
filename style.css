@@ -4,9 +4,10 @@
   font-family: arial, sans-serif;
 }
 
-a {
+a, p {
   text-decoration: none;
-  color: #272727;
+  color: #757575;
+
 }
 
 /* Main Body */
@@ -132,12 +133,9 @@ a {
   background-repeat: no-repeat;
 }
 
-a p:hover {
+a p:hover, p:hover {
   text-decoration: underline;
-}
-
-p:hover {
-  text-decoration: underline;
+  color: #000;
 }
 
 /* add in hover images*/
@@ -148,7 +146,6 @@ p:hover {
 .search:focus {
   outline-color: #aaa;
   outline-style: auto;
-
 }
 
 .search:hover {
